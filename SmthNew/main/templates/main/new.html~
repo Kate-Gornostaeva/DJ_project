@@ -1,0 +1,8 @@
+{% extends 'main/layout.html' %}
+{% block title %}
+    <title>Вторая страница DJ02</title>
+{% endblock %}
+
+{% block content %}
+    <h1>Вторая страница: работа с шаблонизатором</h1>
+{% endblock %}

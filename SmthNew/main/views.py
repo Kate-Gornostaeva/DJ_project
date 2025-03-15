@@ -13,3 +13,8 @@ def test(request):
 def data(request):
     return HttpResponse("<p>В одно окно смотрели двое. <br>Один увидел дождь и грязь.<br>"
                         "Другой — листвы зелёной вязь, весну и небо голубое.<br>В одно окно смотрели двое.</p>")
+def index2(request):
+    return render(request, 'main/index.html')
+
+def new(request):
+    return render(request, 'main/new.html')
