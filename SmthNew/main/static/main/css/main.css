@@ -1,3 +1,30 @@
+
 body{
     background-color: #deb887;
 }
+<style>
+        /* Дополнительные стили, если нужно */
+        aside {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        aside img {
+            margin-bottom: 15px;
+        }
+        aside ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        aside ul li {
+            margin-bottom: 10px;
+        }
+        aside ul li a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        aside ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
