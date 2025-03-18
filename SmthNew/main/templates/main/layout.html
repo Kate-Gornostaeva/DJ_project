@@ -7,7 +7,21 @@
   {% block title %}{% endblock %}
 </head>
 <body>
-  {% block content %}
-  {% endblock %}
+  <aside>
+    <img src="{% static 'main/img/fire_boom.jpg' %}" alt="Взрыв" width="150px">
+    <span>Kaa-Boom!!!</span>
+      <ul>
+        <li><a href="">Главная</a></li>
+        <li><a href="">Несовсем главная</a></li>
+
+      </ul>
+
+  </aside>
+  <main>
+    {% block content %}
+    {% endblock %}
+
+  </main>
+
 </body>
 </html>
