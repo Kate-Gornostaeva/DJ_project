@@ -15,8 +15,8 @@
                 <img src="{% static 'main/img/fire_boom.jpg' %}" alt="Взрыв" class="img-fluid rounded-circle mb-3" width="150">
                 <h3 class="mb-4">Kaa-Boom!!!</h3>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><a href="{% url 'home' %}" class="btn btn-outline-primary btn-block">Главная</a></li>
-                    <li class="mb-2"><a href="{% url 'about' %}" class="btn btn-outline-secondary btn-block">Не совсем главная</a></li>
+                    <li class="mb-2"><a href="#" class="btn btn-outline-primary btn-block">Главная</a></li>
+                    <li class="mb-2"><a href="#" class="btn btn-outline-secondary btn-block">Не совсем главная</a></li>
                 </ul>
             </aside>
         </div>
