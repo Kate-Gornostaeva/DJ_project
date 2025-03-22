@@ -16,6 +16,14 @@ body {
     font-family: Arial, sans-serif; /* Шрифт по умолчанию */
 }
 
+.site-title {
+  font-size: 36px; /* Увеличение размера шрифта */
+  font-weight: bold; /* Жирный текст */
+  margin-left: 20px; /* Отступ от логотипа */
+  color: #333; /* Цвет текста */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень для текста */
+  font-family: 'Playfair Display', serif; /* Красивый шрифт */
+}
 /* Горизонтальное меню */
 .navbar {
     background-color: #deb887; /* Бежевый цвет, как у меню */
@@ -30,7 +38,10 @@ body {
     height: 150px; /* Высота логотипа */
     border-radius: 10px; /* Закругленные углы */
 }
-
+.navbar-logo {
+  display: flex; /* Используем flexbox для горизонтального расположения */
+  align-items: center; /* Выравнивание по вертикали */
+}
 .navbar-links {
     display: flex;
     gap: 20px; /* Расстояние между кнопками */
