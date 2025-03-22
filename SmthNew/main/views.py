@@ -10,3 +10,9 @@ def index(request):
 
 def new(request):
     return render(request, 'main/new.html')
+
+def dailynews(request):
+    return render(request, 'main/dailynews.html')
+
+def contacts(request):
+    return render(request, 'main/contacts.html')

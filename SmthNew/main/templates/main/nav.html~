@@ -1,4 +1,4 @@
-
+{% load static %}
 <!-- main/templates/main/nav.html -->
 <nav class="navbar">
   <div class="navbar-logo">
