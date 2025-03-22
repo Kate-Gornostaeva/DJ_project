@@ -1,0 +1,98 @@
+
+       /* Основные стили */
+    body, html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        position: relative; /* Для корректного позиционирования футера */
+        min-height: 100vh;
+        background-color: #f5f5dc; /* Нежно-бежевый фон */
+        color: #333; /* Цвет текста по умолчанию */
+        font-family: Arial, sans-serif; /* Шрифт по умолчанию */
+}
+
+
+    /* Горизонтальное меню */
+    .navbar {
+        background-color: #deb887; /* Бежевый цвет, как у меню */
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-logo img {
+        height:150px;* Высота логотипа */
+        border-radius: 10px; /* Закругленные углы */
+    }
+
+    .navbar-links {
+        display: flex;
+        gap: 20px; /* Расстояние между кнопками */
+    }
+
+    .nav-link {
+        color: #333; /* Цвет текста */
+        text-decoration: none;
+        font-size: 16px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.3); /* Фон при наведении */
+    }
+
+    /* Основной контент */
+    .main-content {
+        padding: 20px;
+        padding-bottom: 100px; /* Отступ для футера */
+    }
+
+    /* Футер */
+    footer.footer {
+        background-color: #deb887; /* Бежевый цвет, как у меню */
+        padding: 30px 0; /* Увеличили отступы */
+        text-align: center;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        position: fixed; /* Фиксированное позиционирование */
+        bottom: 0; /* Прижимаем к низу */
+        left: 0;
+        right: 0;
+        z-index: 1000; /* Чтобы футер был поверх других элементов */
+    }
+
+    .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .footer p {
+        margin: 0;
+        color: #333; /* Цвет текста */
+        font-size: 16px; /* Увеличили размер текста */
+        font-weight: bold; /* Сделали текст жирным */
+    }
+
+    .footer-nav {
+        margin-top: 15px; /* Отступ для ссылок */
+    }
+
+    .footer-link {
+        color: #333; /* Цвет текста */
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 14px;
+        transition: color 0.3s;
+    }
+
+    .footer-link:hover {
+        color: #007bff; /* Цвет текста при наведении */
+    }
+
