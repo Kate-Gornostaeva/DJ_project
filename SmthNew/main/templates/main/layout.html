@@ -3,38 +3,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
-  {% block title %}{% endblock %}
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+  <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-  <div class="container mt-4">
-    <div class="row">
-        <div class="col-md-3">
-            <aside class="custom-bg p-4 rounded shadow text-center">
-                <img src="{% static 'main/img/fire_boom.jpg' %}" alt="Взрыв" class="img-fluid rounded-circle mb-3" width="150">
-                <h3 class="mb-4">Kaa-Boom!!!</h3>
-                <ul class="list-unstyled">
-                    <li class="mb-2"><a href="{% url 'home' %}" class="btn btn-outline-primary btn-block">Главная</a></li>
-                    <li class="mb-2"><a href="{% url 'about' %}" class="btn btn-outline-secondary btn-block">Не совсем главная</a></li>
-                </ul>
-            </aside>
-        </div>
-        <div class="col-md-9">
-            <main>
-                {% block content %}
-                {% endblock %}
-            </main>
-        </div>
+  <!-- Горизонтальное меню -->
+  {% include 'main/nav.html' %}
+
+  <!-- Основной контент -->
+  <div class="main-content">
+    <div class="container">
+      {% block content %}
+      {% endblock %}
     </div>
-</div>
+  </div>
 
-    <!-- Подключаем Bootstrap JS и зависимости -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Футер -->
+  {% include 'main/footer.html' %}
+
+  <!-- Подключаем Bootstrap JS и зависимости -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
-
-
 </html>

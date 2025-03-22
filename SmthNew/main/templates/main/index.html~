@@ -1,6 +1,6 @@
 {% extends 'main/layout.html' %}
 {% block title %}
-    Главная страница
+    Первая страница DJ02
 {% endblock %}
 {% block content %}
 

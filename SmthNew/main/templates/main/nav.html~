@@ -1,5 +1,13 @@
-<ul>
-  <li><a href="">Главная</a></li>
-  <li><a href="">Тест</a></li>
 
-</ul>
+<!-- main/templates/main/nav.html -->
+<nav class="navbar">
+  <div class="navbar-logo">
+    <img src="{% static 'main/img/birds.jpg' %}" alt="Логотип Птички на проводе">
+  </div>
+  <div class="navbar-links">
+    <a href="{% url 'home' %}" class="nav-link">Главная</a>
+    <a href="{% url 'about' %}" class="nav-link">Не совсем главная</a>
+    <a href="#" class="nav-link">Новенькое</a>
+    <a href="#" class="nav-link">Кто же такие птички?</a>
+  </div>
+</nav>
