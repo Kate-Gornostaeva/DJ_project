@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+
 
 def index(request):
     data={
@@ -11,8 +11,8 @@ def index(request):
 def new(request):
     return render(request, 'main/new.html')
 
-def dailynews(request):
-    return render(request, 'main/dailynews.html')
+def daily(request):
+    return render(request, 'main/daily.html')
 
 def contacts(request):
     return render(request, 'main/contacts.html')
