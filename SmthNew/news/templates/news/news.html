@@ -7,5 +7,12 @@
 
     <h1>Птички принесли новости: чирик-чирик</h1>
 
+{% for new in news %}
+    <div>
+        <h2>{{ new.title }}</h2>
+        <p>{{ new.short_description }}</p>
+    </div>
+
+{% endfor %}
 
 {% endblock %}

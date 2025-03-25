@@ -1,11 +1,18 @@
 {% extends 'main/layout.html' %}
 {% block title %}
-    Вторая страница
+    Новостная страница
 {% endblock %}
 
 {% block content %}
 
     <h1>Птички принесли новости: чирик-чирик</h1>
 
+{% for news in news %}
+    <div>
+        <h2>{{ new.title }}</h2>
+        <p>{{ new.short_description }}</p>
+    </div>
+
+{% endfor %}
 
 {% endblock %}
