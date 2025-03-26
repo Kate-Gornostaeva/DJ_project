@@ -9,8 +9,17 @@
 
 {% for new in news %}
     <div>
-        <h2>{{ new.title }}</h2>
-        <p>{{ new.short_description }}</p>
+        <h2 style=" text-decoration: underline;">Новость дня: </h2>
+        <p style="color: red; font-size: 40px">{{ new.title }}</p>
+        <h3> Если вкратце:</h3>
+        <p> {{ new.short_description }}</p><br>
+        <h3> Если подробно:</h3>
+        <p> {{new.text}}</p><br>
+        <hr>
+        <h4>Когда новость прилетела:</h4>
+        <p> {{new.pub_date}}</p><br>
+        <h4>Какая птичка принесла:</h4>
+        <p> {{new.author}}</p>
     </div>
 
 {% endfor %}

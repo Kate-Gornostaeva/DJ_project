@@ -11,8 +11,8 @@ def index(request):
 def new(request):
     return render(request, 'main/new.html')
 
-#def daily(request):
-   # return render(request, 'main/daily.html')
+def daily(request):
+    return render(request, 'main/daily.html')
 
 def contacts(request):
     return render(request, 'main/contacts.html')
