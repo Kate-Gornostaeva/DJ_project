@@ -8,38 +8,34 @@
     <h1>Ты что-то узнал? Поделись новостью!</h1>
        <div>
            <h2> Пиши сюда!</h2>
-         <form method="post" class="container mt-5">
+            <form method="post" action="" class="container mt-5">
              {% csrf_token %}
     <div class="mb-3">
-        <label for="title" class="form-label">Заголовок</label>
-        <input type="text" class="form-control" id="title" placeholder="Введите заголовок">
+        {{form.title}}
     </div>
 
     <div class="mb-3">
-        <label for="shortDesc" class="form-label">Краткое описание</label>
-        <input type="text" class="form-control" id="shortDesc" placeholder="Введите краткое описание">
+        {{form.short_description}}
     </div>
 
     <div class="mb-3">
-        <label for="fullDesc" class="form-label">Полное описание</label>
-        <textarea class="form-control" id="fullDesc" rows="4" placeholder="Введите полное описание"></textarea>
+        {{form.text}}
     </div>
 
     <div class="row mb-3">
         <div class="col-md-6">
-            <label for="date" class="form-label">Дата</label>
-            <input type="date" class="form-control" id="date">
+            {{form.pub_date}}
         </div>
-        <div class="col-md-6">
-            <label for="time" class="form-label">Время</label>
-            <input type="time" class="form-control" id="time">
-        </div>
+    </div>
+
+    <div class="mb-3">
+        {{form.author}}
     </div>
 
     <button type="submit" class="btn btn-primary">Добавить новость</button>
 </form>
 
-
+<p>{{error}}</p>
        </div>
 
 
